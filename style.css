@@ -1,0 +1,170 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 50%;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+.wrapper {
+  background-color: hsl(216, 50%, 16%);
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 720px;
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+main > img {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.wrapper > h1 {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-size: x-large;
+
+  width: 40%;
+}
+.wrapper > p {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.wrapper > .price-and-date {
+  /* border: 3px solid green; */
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.horizontal-line {
+  width: 50%;
+  border: 1px solid hsl(215, 32%, 27%); /* Only bottom line */
+}
+
+#image-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+body {
+  margin-top: 8rem;
+}
+main {
+  padding: 2rem;
+  border-radius: 10px;
+  width: 70%;
+}
+
+#name {
+  color: white;
+}
+#price {
+  color: hsl(178, 100%, 50%);
+}
+
+.price-and-date > div {
+  display: flex;
+  gap: 0.5em;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+/* #icon-ethereum {
+  width: 18px;
+  height: 18px;
+} */
